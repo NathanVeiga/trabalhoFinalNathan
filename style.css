@@ -1,0 +1,188 @@
+/* Estilos básicos e Paleta de Cores Laranja */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffaf0; 
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #d35400; 
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fdfdfd;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover, nav ul li a.ativo {
+    background-color: #e67e22; 
+    color: white;
+}
+
+/* Container Principal */
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+h2 {
+    color: #d35400;
+    border-bottom: 2px solid #e67e22;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+h3 {
+    color: #e67e22;
+}
+
+/* Página Sobre Mim */
+.sobre-conteudo {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.textos-sobre p {
+    line-height: 1.6;
+}
+
+/* Estilo da Foto de Perfil */
+.foto-perfil {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; 
+    border-radius: 50%;
+    border: 4px solid #e67e22;
+    box-shadow: 0 4px 8px rgba(230, 126, 34, 0.3);
+}
+
+/* Página de Projetos */
+.item-projeto {
+    background-color: #fffaf0;
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-left: 5px solid #e67e22;
+    border-radius: 0 8px 8px 0;
+}
+
+.item-projeto p {
+    line-height: 1.5;
+}
+
+/* Página de Contato - Redes Sociais */
+.links-redes {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0 40px 0;
+}
+
+.btn-rede {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #d35400; 
+    background-color: #ffe8d6; 
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 1px solid #e67e22; 
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-rede:hover {
+    background-color: #e67e22; 
+    color: white; 
+    border-color: #d35400;
+    transform: translateY(-3px);
+}
+
+/* Ícones do contato */
+.icone-rede {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+/* Formulário */
+form {
+    padding: 20px;
+    background-color: #fdfdfd;
+    border: 1px solid #eee;
+    border-radius: 8px;
+}
+
+input, button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-family: inherit;
+}
+
+button {
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background 0.3s;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #d35400;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #888;
+    font-size: 14px;
+}
+
+/* Responsividade Básica (Celular) */
+@media (max-width: 600px) {
+    .sobre-conteudo {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .links-redes {
+        flex-direction: column;
+    }
+}
+
+

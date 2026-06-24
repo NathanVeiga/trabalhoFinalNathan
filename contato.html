@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Nathan Veiga</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Nathan Veiga</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Sobre Mim</a></li>
+                <li><a href="objetivo-projeto.html">Objetivos e Projetos</a></li>
+                <li><a href="contato.html" class="ativo">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contato">
+            <h2>Entre em Contato</h2>
+            <p>Se quiser conversar sobre tecnologia, projetos ou oportunidades, me chame em uma das redes abaixo:</p>
+            
+            <div class="links-redes">
+                <a href="https://github.com" target="_blank" class="btn-rede">
+                    <img src="github.png" alt="Ícone GitHub" class="icone-rede">
+                    <span>GitHub</span>
+                </a>
+                <a href="https://linkedin.com" target="_blank" class="btn-rede">
+                    <img src="linkedin.png" alt="Ícone LinkedIn" class="icone-rede">
+                    <span>LinkedIn</span>
+                </a>
+                <a href="mailto:nathan.veiga@gmail.com" class="btn-rede">
+                    <img src="email.png" alt="Ícone E-mail" class="icone-rede">
+                    <span>E-mail</span>
+                </a>
+            </div>
+
+            <form id="meuFormulario">
+                <h3>Ou envie uma mensagem direta:</h3>
+                <label for="nome">Seu Nome:</label>
+                <input type="text" id="nome" required placeholder="Digite seu nome">
+                
+                <button type="submit">Enviar Dados</button>
+            </form>
+            
+            <p id="mensagemSucesso" style="color: #27ae60; font-weight: bold; margin-top: 15px; display: none;"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Nathan Veiga</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
